@@ -1,57 +1,72 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
+<!-- based on a Pen by Devilish Alchemist @ http://codepen.io/devilishalchemist/pen/LERvpM -->
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	
-    <title>Vôos</title>
+  <meta charset="UTF-8">
+  <title>Vôos</title>
 
-    <meta name="generator" content="Zim Zim 0.68-rc1, based on the Ecodiv-responsive template">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,greek,latin-ext' rel='stylesheet' type='text/css'> -->
-
-    <!-- Scripts -->
-    <script type='text/javascript' src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
-    
-    <!-- !! Different stylesheets for different screen sizes. Adapt to your likening-->
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
-    <link rel="stylesheet" media="screen and (min-width: 741px)" href=../_resources/style.css>
-    <link rel="stylesheet" media="screen and (max-width: 740px)" href=../_resources/style_mobile.css>
+  <link rel="stylesheet" href="../_resources/css/normalize.min.css">
+  <link rel="stylesheet" href="../_resources/css/whhg.css">
+  <link rel="stylesheet" href="../_resources/css/fonts.css">
+  <link rel="stylesheet" href="../_resources/css/style.css">
 
 </head>
+
 <body>
-    
-    <!-- See the Zim help file on templates for options -->    <div class="container">
-        <div data-role="page" class="ui-responsive-panel">
-            
-            <!-- Header / title -->
-    
-            <div data-role="header" data-position="fixed">
-                <a href="#nav-panel" data-icon="bars">Ver sumário</a> 
-                
-                <!-- !! Fill in the website title -->
-                <h1>Euro 2020</h1> 
-                
-                <!-- !! Optionally, create button with custom link. To apply uncomment the next line and fill in the link (and optionally change the button and text)) -->
-                <!-- <a href="http://my.website.org" data-icon="home">Main website</a> -->
-                
+  <div class="page">
+
+    <span id="view-toc" class="tooltip">&laquo; view index</span>
+    <span id="view-content" class="tooltip">return to content &raquo;</span>
+    <span id="view-next" class="tooltip">next page &raquo;</span>
+    <span id="view-prev" class="tooltip">&laquo; previous page</span>
+
+    <span class="menu_toggle">
+      <i class="menu_open icon icon-th-list"></i>
+      <i class="menu_close icon icon-import"></i>
+    </span>
+
+    <div id="navigation">
+      <ul>
+<li><a href="../Home.html" title="Home" class="page">Home</a></li>
+<li><a href="../Journal.html" title="Journal" class="page">Journal</a></li>
+<li><a href="../Transportes.html" title="Transportes" class="page">Transportes</a>
+<ul>
+<li><a href="./Trens.html" title="Trens" class="page">Trens</a></li>
+<li><b>Vôos</b>
+<ul>
+<li><a href="./Vôos/Bilhete_original_Lou.html" title="Bilhete original Lou" class="page">Bilhete original Lou</a></li>
+<li><a href="./Vôos/Bilhete_TAP_atualizado.html" title="Bilhete TAP atualizado" class="page">Bilhete TAP atualizado</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      <span class="zimversion">
+        <small>built with</small><br><strong>Zim 0.68-rc1</strong>
+        <br>
+        --
+        <br>
+        <a href="https://github.com/scar45/ResponsivePivot">template<br> on Github<br><i class="icon icon-github"></i></a>
+      </span>
+    </div>
+
+    <main class="content">
+      <div class="content_inner">
+        <article>
+          <header>
+            <a id="navPrev" href='./Trens.html'><span><i class="icon icon-chevron-left"></i></span></a>
+
+            <a id="navHome" href='../Home.html'><span><i class="icon icon-homealt"></i></span></a>
+
+            <a id="navNext" href='./Vôos/Bilhete_original_Lou.html'><span><i class="icon icon-chevron-right"></i></span></a>
+          </header>
+
+          <section>
+            <div class="page-title">
+              <h1><i class="icon icon-bookmarkalt"></i> Vôos <a name='Transportes:Vôos'></a></h1>
             </div>
-            
-            <!-- Warning message if java script is disabled -->
-            <noscript>
-                <div style="border: 1px solid purple; padding: 10px">
-                    <span style="color:red">This page is best viewed with JavaScript enabled!</span>
-                </div>
-            </noscript>
-            
-            <!-- Page content -->
-            
-            <div data-role="content">
-                    <h1>Vôos <a name='Transportes:Vôos'></a></h1>
-    
-                    <p>
+            <div class="fade fade-top"></div>
+            <div class="page-body">
+              <p>
 Criado <a href="../Journal/2019/07/14.html" title="domingo 14 julho 2019," class="page">domingo 14 julho 2019,</a> modificado em <a href="../Journal/2019/12/14.html" title="14/12/2019" class="page">14/12/2019</a>
 </p>
 
@@ -63,85 +78,44 @@ LA 3625 <a href="../Journal/2020/01/31.html" title="31/01" class="page">31/01</a
 </p>
 
 <p>
-<tt>GRU</tt>-&gt;<a href="../Home/Cidades/Lisboa.html" title="Lisboa" class="page">Lisboa</a>: Embarque <a href="../Journal/2020/01/31.html" title="31/01" class="page">31/01</a> até as 19:55, decola 21:25, chegada às 10:15
+<tt>GRU</tt>-&gt;<a href="../Home/Cidades/Lisboa.html" title="Lisboa" class="page">Lisboa</a>: TP 88, Embarque <a href="../Journal/2020/01/31.html" title="31/01" class="page">31/01</a> até as 19:55, decola 21:25, chegada às 10:15 (ver <a href="./Vôos/Bilhete_TAP_atualizado.html" title="Bilhete TAP atualizado" class="page">Bilhete TAP atualizado</a>)
 </p>
 
 <p>
-Lisboa <a href="../Journal/2020/02/06.html" title="06/02" class="page">06/02</a> <s>7:00</s> <b>7:20</b> -&gt; Florença 6/2 <s>11:30</s> 11:05 (Check-in até 6:00h)<br>
+Lisboa <a href="../Journal/2020/02/06.html" title="06/02" class="page">06/02</a> <s>7:00</s> <b>7:20</b> -&gt; Florença 6/2 <s>11:30</s> 11:05 (Check-in até 6:00h) TP 878<br>
 <img src="./Vôos/Carte_zone_euro.svg"><br>
-<a href="../Home/Cidades/Florença.html" title="Florença" class="page">Florença</a> <a href="../Journal/2020/02/14.html" title="14/02" class="page">14/02</a> <s>11:30</s> <b>11:50</b>  -&gt; Lisboa <s>13:30</s> <b>13:50</b> (Check-in até 10:45)
+<a href="../Home/Cidades/Florença.html" title="Florença" class="page">Florença</a> <a href="../Journal/2020/02/14.html" title="14/02" class="page">14/02</a> <s>11:30</s> <b>11:50</b>  -&gt; Lisboa <s>13:30</s> <b>13:50</b> (Check-in até 10:45) TP 879
 </p>
 
 <p>
-Lisboa  <a href="../Journal/2020/02/14.html" title="14FEB" class="page">14FEB</a> 2320 -&gt; <tt>GRU</tt> <a href="../Journal/2020/02/15.html" title="15/02" class="page">15/02</a> 6:20 (Check-in até <b>15:15</b>!!)
+Lisboa  <a href="../Journal/2020/02/14.html" title="14FEB" class="page">14FEB</a> 2320 -&gt; <tt>GRU</tt> <a href="../Journal/2020/02/15.html" title="15/02" class="page">15/02</a> 6:20 (Check-in até <b>15:15</b>!!) TP 87
 </p>
 
 <p>
 <tt>GRU</tt> -&gt; <tt>BSB</tt>: LA 3692  (Terminal 2) 11:45 -&gt; 13:25
 </p>
 
-                    <br></br>
-                    
-                    <hr class='footnotes'>
-                    <span class="backlinks">
-                        <hr class='footnotes'>
-                        <b>Backlinks:</b>
-                        <a href='../Home.html'>Home</a>
-                        
-                        <a href='../Transportes.html'>Transportes</a>
-                        
-                        <a href='../Home/Checklists/Documentos_pra_imprimir.html'>Home:Checklists:Documentos pra imprimir</a>
-                        <br /><br />
-                    </span>
-    
-                <!-- !! The script will center all images. If you prefer the default (images at left delete these three lines -->    
-                <script>
-                    $( "img" ).wrap( "<div class='imgcenter'></div>" );
-                </script>
-    
-                
             </div>
-            
-            <!-- Navigation panel -->
-            
-            <div data-role="panel" data-position-fixed="true" data-display="reveal" data-theme="a" id="nav-panel" data-dismissible="false">
-                <div style="display:inline-block;">
-                    
-                    <!-- !! If you want to place your logo, uncomment the next section and fill in the link between the quotation marks after href if you want the logo to link to another page or website -->
-                    <!-- <div id="logos" align="center">
-                        <a title="your title" href="" target="_blank">
-                            <img src=../_resources/zim_logo.png style="border-style:none" align="right"></a>
-                    </div> -->
-                    
-                    <div>
-                        <!-- !! optionally.. add your custom search engine script -->
-                        <a href="#header" data-rel="close" data-role="button" data-theme="a" data-icon="delete" data-inline="true">Fechar painel</a>
-    
-                        <!-- !! optionally.. add link to start page or index page. To do so, uncomment the next 2 lines and fill in the webpage name / url-->
-                        <!-- <br></br>
-                        <a href="./link-to-start-page.html">Name of page</a>-->
-                        
-                        <ul>
-<li><a href="../Home.html" title="Home" class="page">Home</a></li>
-<li><a href="../Journal.html" title="Journal" class="page">Journal</a></li>
-<li><a href="../Transportes.html" title="Transportes" class="page">Transportes</a>
-<ul>
-<li><a href="./Trens.html" title="Trens" class="page">Trens</a></li>
-<li><b>Vôos</b>
-<ul>
-<li><a href="./Vôos/Bilhete_original_Lou.html" title="Bilhete original Lou" class="page">Bilhete original Lou</a></li>
-</ul></li>
-</ul></li>
-</ul>
+            <div class="fade fade-bottom"></div>
+          </section>
 
-                        
-                        <!-- !! Optionally, button which brings the user to your contact form. To enable this, remove comment mark below and fill in the link between the quoation marks after href -->
-                        <!--<br></br>
-                        <a title="Contact us" data-icon="info" href="" data-role="button" target="_blank">Contact us</a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+          <footer>
+              <a href="#" class="scrollToTop" title="Back to top"><i class="icon icon-uploadalt"></i></a>
+              <b>Backlinks:</b>
+              <a class="page" href='../Home.html'>Home</a>
+              
+              <a class="page" href='../Transportes.html'>Transportes</a>
+              
+              <a class="page" href='../Home/Checklists/Documentos_pra_imprimir.html'>Home:Checklists:Documentos pra imprimir</a>
+              <br /><br />
+          </footer>
+        </article>
+      </div>
+    </main>
+  </div>
+
+  <script src="../_resources/js/jquery.v2.1.3.min.js"></script>
+  <script src="../_resources/js/index.js"></script>
+
 </body>
 </html>
