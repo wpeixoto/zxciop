@@ -1,0 +1,24 @@
+digraph voos_brasil {
+  rankdir=LR
+  BSB -> LA3625 [label="31/1\n14:05"] 
+  LA3625 -> GRU [label="15:50"]
+  GRU -> BSB [taillabel="\n11:45" headlabel="\n13:25" label="LA3692"]
+  LA3625 [shape=none label="LA 3625"]
+  subgraph Euro {
+    rank=same
+    rankdir=TD
+    GRU
+    LIS
+  subgraph TAP {
+    # rank=same
+    rankdir=LR
+    TP88 [shape=none]
+    TP87 [shape=none]
+    GRU -> TP88 [label="31/1\n21:25" taillabel="19:55"]
+    LIS -> TP87 [label="14/2\n23:20" tailport="W" headport="W"]
+    TP88 -> LIS [label="1º/2\n10:15"] 
+    TP87 -> GRU [label="15/2\n6/20"]
+  }
+  }
+  
+}
